@@ -10,6 +10,7 @@ angular.module('directivePractice').directive('dirDisplay', function () {
                 scope.details = !scope.details;
                 scope.$apply();
             })
+            console.log(scope);
 
 
         }
