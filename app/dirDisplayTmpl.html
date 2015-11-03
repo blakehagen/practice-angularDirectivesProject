@@ -1,14 +1,15 @@
 <div>
     <h1>User</h1>
 </div>
+
 <div>
     <h3>{{user.name}}</h3>
 </div>
+
 <div>
-    <h4>Age: {{user.age}}</h4>
+    <h6>See Details</h6>
 </div>
-<div>
+<div ng-show="details">
+    <h4>Age: {{user.age}}</h4>
     <h4>Email: {{user.email}}</h4>
 </div>
-
-<!--<dir-display test="myTest" my-check="checkItOut"></dir-display>-->
