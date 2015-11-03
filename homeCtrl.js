@@ -1,4 +1,4 @@
-angular.module('directivePractice').controller('homeCtrl', function ($scope) {
+angular.module('directivePractice').controller('homeCtrl', function ($scope, weatherService) {
 
     $scope.users =
 
@@ -34,8 +34,11 @@ angular.module('directivePractice').controller('homeCtrl', function ($scope) {
             city: "Phoenix"
         }
     ]
-    
-    $scope.test = "DOES THIS WORK!!???!"
+
+    $scope.getWeather = function (city) {
+        return weatherService.getWeather(city);
+    }
+
 
 
 
