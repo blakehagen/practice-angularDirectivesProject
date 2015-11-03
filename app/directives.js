@@ -2,6 +2,11 @@ angular.module('directivePractice').directive('dirDisplay', function () {
 
     return {
         templateUrl: 'app/dirDisplayTmpl.html',
+        scope: {
+            user: '=', 
+        },
+        
+        
         link: function (scope, elem, attrs) {
             scope.details = false;
 
@@ -10,9 +15,6 @@ angular.module('directivePractice').directive('dirDisplay', function () {
                 scope.details = !scope.details;
                 scope.$apply();
             })
-            console.log(scope);
-
-
         }
     }
 

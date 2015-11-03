@@ -1,6 +1,6 @@
-var app = angular.module('directivePractice', ['ui.router']);
+angular.module('directivePractice', ['ui.router'])
 
-app.config(function ($stateProvider, $urlRouterProvider) {
+.config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
         .state('home', {

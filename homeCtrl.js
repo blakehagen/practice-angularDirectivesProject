@@ -3,7 +3,6 @@ angular.module('directivePractice').controller('homeCtrl', function ($scope) {
     $scope.users =
 
     [
-
         {
             name: "Geoff McMammy",
             age: 43,
@@ -35,6 +34,8 @@ angular.module('directivePractice').controller('homeCtrl', function ($scope) {
             city: "Phoenix"
         }
     ]
+    
+    $scope.test = "DOES THIS WORK!!???!"
 
 
 
