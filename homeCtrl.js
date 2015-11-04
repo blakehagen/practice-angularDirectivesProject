@@ -32,6 +32,12 @@ angular.module('directivePractice').controller('homeCtrl', function ($scope, wea
             age: 67,
             email: "gernee@gmail.com",
             city: "Phoenix"
+        },
+        {
+            name: "John Doe",
+            age: 33,
+            email: "email@gmail.com",
+            city: "Salt Lake City"
         }
     ]
 
